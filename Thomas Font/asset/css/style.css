@@ -1,0 +1,124 @@
+body{
+    background-image: url(../elements/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.firstgrid-container{
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 1fr;
+}
+.fleche1{
+    height: 100px;
+    width: 100px;
+}
+.rules{
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.VS{
+    height: 70px;
+    width: 70px;
+    margin-top: 30px;
+    margin-right: 620px;
+}
+
+
+.secondgrid-container{
+        display: grid;
+        grid-template-columns: 1fr 0.2fr 0.7fr 0.2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        margin-top: 10px;
+        grid-template-areas:
+          "J1 poucevert score poucevert2 J2"
+          "J1 poucerouge score poucerouge2 J2"
+        
+      }
+.J1 { 
+    grid-area: J1; 
+    display: flex;
+    justify-content: end;
+}
+.score { 
+    grid-area: score;
+    display: flex;
+    justify-content: center;
+}
+.J2 { 
+    grid-area: J2; 
+}
+
+
+.poucevert { 
+    grid-area: poucevert; 
+    display: flex;
+    justify-content: end;
+}
+.poucerouge { 
+    grid-area: poucerouge; 
+    display: flex;
+    justify-content: end;
+}
+.poucevert2 { grid-area: poucevert2; }
+
+.poucerouge2 { grid-area: poucerouge2; }
+
+.J1 > img{
+    height: 200px;
+    width: 250px;
+}
+.score > img{
+    height: 150px;
+    width: 250px;
+}
+.J2 > img{
+    height: 200px;
+    width: 250px;
+}
+.poucevert > img{
+    height: 50px;
+    width: 50px;
+}
+.poucerouge > img{
+    height: 50px;
+    width: 50px;
+}
+.poucevert2 > img{
+    height: 50px;
+    width: 50px;
+}
+.poucerouge2 > img{
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Contenu du jeu */
+
+    #gameToken #zoneGame #zoneReset{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .token img {
+        width: 150px;
+       
+            align-self: center;
+            justify-self: center;
+            
+    }
+
+    #zoneGame {
+        
+            grid-area: a;
+            align-self: center;
+            justify-self: center;
+          
+    }
+    #zoneReset img {
+        width: 100px;
+       
+            
+    }
